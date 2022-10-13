@@ -1,0 +1,14 @@
+.aboutMe {
+  background-color: #1f2833;
+  color: #c5c6c7;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .aboutMeInfo {
+    margin: 4%;
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
