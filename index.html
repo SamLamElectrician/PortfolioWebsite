@@ -8,7 +8,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Sammy Lam Portfolio</title>
   </head>
   <body>
@@ -58,7 +60,12 @@
           <a href="#contact">Contact</a>
         </nav>
         <section class="content aboutMe" id="aboutMe">
-          <div class="aboutMeInfo">
+          <div
+            class="aboutMeInfo"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+          >
             <h2>Hello, I'm Sam &#128075;</h2>
             <p>
               A front end developer with a background in electrical and IT
@@ -172,17 +179,87 @@
           </div>
         </section>
         <section class="content toolKit" id="toolKit">
-          <div>
-            <h2>My Tool kit</h2>
+          <div class="toolSection">
+            <div>
+              <h2>My Tool kit</h2>
+            </div>
+            <ul class="tools">
+              <li><img src="images/icons/html.svg" alt="html icons" />HTML</li>
+              <li><img src="images/icons/css.svg" alt="css icons" />CSS</li>
+              <li><img src="images/icons/sass.svg" alt="sass icons" />SASS</li>
+              <li>
+                <img
+                  src="images/icons/javascript.svg"
+                  alt="javascript icon"
+                />JAVASCRIPT
+              </li>
+              <li>
+                <img src="images/icons/jquery.svg" alt="Jquery icon" />JQUERY
+              </li>
+              <li>
+                <img src="images/icons/react.svg" alt="React icon" />REACT
+              </li>
+              <li>
+                <img src="images/icons/github.svg" alt="github icon" />GITHUB
+              </li>
+              <li>
+                <img src="images/icons/firebase.svg" alt="Fire base icon" />FIRE
+                BASE
+              </li>
+              <li>
+                <img
+                  src="images/icons/accessibility.svg"
+                  alt="accessibility icon"
+                />ACCESSIBILITY
+              </li>
+            </ul>
           </div>
         </section>
         <section class="content contact" id="contact">
           <div>
             <h2>Let's Connect!</h2>
+            <div class="contactForm">
+              <form action="thankyou/thanks" method="POST" name="contact">
+                <input type="hidden" name="form-name" value="contact" />
+                <label for="name" class="visuallyHidden">name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="name"
+                  autocomplete="off"
+                  required
+                />
+                <label class="visuallyHidden" for="email">email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                  required
+                />
+                <label class="visuallyHidden" for="message" autocomplete="off"
+                  >message</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="message"
+                  required=""
+                ></textarea>
+                <div class="submit">
+                  <button class="send" type="submit">send message</button>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </section>
     </main>
     <script src="script.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

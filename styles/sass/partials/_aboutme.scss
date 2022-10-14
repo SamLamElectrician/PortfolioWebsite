@@ -5,10 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  h2 {
+    padding: 2%;
+    font-size: 2.2rem;
+  }
   .aboutMeInfo {
     margin: 4%;
     p {
       font-size: 1.5rem;
+      margin: 3%;
     }
   }
 }

@@ -1,4 +1,25 @@
 .contact {
   background-color: #1f2833;
   color: #c5c6c7;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 4%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    textarea {
+      height: 20vh;
+      resize: none;
+    }
+    .submit {
+      margin: 0 auto;
+      button {
+        margin-top: 10%;
+      }
+    }
+  }
 }

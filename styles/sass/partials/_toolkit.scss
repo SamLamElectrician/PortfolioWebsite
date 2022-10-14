@@ -1,8 +1,35 @@
 .toolKit {
   background-color: #1f2833;
   color: #c5c6c7;
+
   h2 {
     text-align: center;
     font-size: 2rem;
+    padding-top: 8%;
+  }
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  li {
+    text-align: center;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    &:hover {
+      color: #66fcf1;
+    }
+    &:focus {
+      color: #66fcf1;
+    }
+    img {
+      width: 90px;
+      margin: 20px 15px;
+      &:hover {
+        background-color: #66fcf1;
+      }
+    }
   }
 }
