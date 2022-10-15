@@ -1,3 +1,9 @@
+const button = document.querySelector(".menu-collapsed");
+
+button.addEventListener("click", () => {
+  button.classList.toggle("menu-expanded");
+});
+
 function contact(event) {
   event.preventDefault();
 
@@ -9,7 +15,8 @@ function contact(event) {
       "8X5aCUiGHuFKNdN71"
     )
     .then(() => {
-      console.log("hello");
+      console.log("hello world");
+      loading();
     })
     .catch(() => {
       alert(

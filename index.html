@@ -10,6 +10,13 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       type="text/javascript"
@@ -62,12 +69,18 @@
         </div>
       </section>
       <section class="contentContainer">
-        <nav>
-          <a href="#projects">Projects</a>
-          <a href="#aboutMe">About Me</a>
-          <a href="#toolKit">Tool Kit</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="menu-collapsed">
+          <div class="bar"></div>
+          <nav>
+            <ul>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#aboutMe">About Me</a></li>
+              <li><a href="#toolKit">Tool Kit</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
         <section class="content aboutMe" id="aboutMe">
           <div
             class="aboutMeInfo"
@@ -242,8 +255,8 @@
         </section>
         <section class="content contact" id="contact">
           <h2>Let's Connect!</h2>
-          <div class="contactForm">
-            <form id="contact-form" onsubmit="contact(event)">
+          <div class="contact">
+            <form id="form" onsubmit="contact(event)">
               <div class="fields">
                 <label class="form-name" for="name">Name</label>
                 <input type="text" name="user-name" />
