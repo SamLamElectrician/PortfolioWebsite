@@ -1,7 +1,19 @@
+function contact(event) {
+  event.preventDefault();
 
-$(document).ready(function () {
-    $('.tools').attr({
-        "data-aos": "zoom-in",
-        "data-aos-duration": "2000"
-    }
-)
+  emailjs
+    .sendForm(
+      "service_1xou5c7",
+      "template_p68bvop",
+      event.target,
+      "8X5aCUiGHuFKNdN71"
+    )
+    .then(() => {
+      console.log("hello");
+    })
+    .catch(() => {
+      alert(
+        "email is temporarily unavailable. Please contact me on Sammylam505@gmail.com"
+      );
+    });
+}

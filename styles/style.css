@@ -1,16 +1,14 @@
 .aboutMe {
-  background-color: #1f2833;
+  background-color: rgb(40, 40, 43);
   color: #c5c6c7;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10%;
 }
 .aboutMe h2 {
   padding: 2%;
@@ -322,7 +320,7 @@ img {
 }
 
 .contact {
-  background-color: #1f2833;
+  background-color: rgb(40, 40, 43);
   color: #c5c6c7;
 }
 .contact h2 {
@@ -344,10 +342,20 @@ img {
 .contact form textarea {
   height: 20vh;
   resize: none;
-  margin-top: 3%;
+  margin: 3% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.contact form input {
+.contact form .fields {
   margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .contact form .submit {
   margin: 0 auto;
@@ -357,7 +365,7 @@ img {
 }
 
 .projects {
-  background-color: #1f2833;
+  background-color: rgb(40, 40, 43);
   color: #c5c6c7;
 }
 .projects h2 {
@@ -458,7 +466,7 @@ img {
 }
 
 .toolKit {
-  background-color: #1f2833;
+  background-color: rgb(40, 40, 43);
   color: #c5c6c7;
 }
 .toolKit h2 {
@@ -509,7 +517,7 @@ img {
 .overview {
   width: 100%;
   height: 100vh;
-  background-color: #0b0c10;
+  background-color: rgb(40, 40, 43);
   color: #c5c6c7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,7 +531,7 @@ img {
   top: 0;
 }
 .overview span {
-  color: #66fcf1;
+  color: #7a4285;
 }
 .overview .imgContainer {
   margin: 0% 5% 0 5%;

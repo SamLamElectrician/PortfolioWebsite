@@ -1,5 +1,5 @@
 .contact {
-  background-color: #1f2833;
+  background-color: rgb(40, 40, 43);
   color: #c5c6c7;
   h2 {
     text-align: center;
@@ -14,10 +14,13 @@
     textarea {
       height: 20vh;
       resize: none;
-      margin-top: 3%;
+      margin: 3% 0%;
+      display: flex;
     }
-    input {
+    .fields {
       margin-top: 3%;
+      display: flex;
+      flex-direction: column;
     }
     .submit {
       margin: 0 auto;

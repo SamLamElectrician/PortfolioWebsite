@@ -11,6 +11,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles/style.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("8X5aCUiGHuFKNdN71");
+      })();
+    </script>
     <title>Sammy Lam Portfolio</title>
   </head>
   <body>
@@ -216,46 +225,23 @@
           </div>
         </section>
         <section class="content contact" id="contact">
-          <div>
-            <h2>Let's Connect!</h2>
-            <div class="contactForm">
-              <form
-                action="mailto:sammylam505@gmail.com"
-                method="POST"
-                enctype="multipart/form-data"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <label for="name" class="visuallyHidden">name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="name"
-                  autocomplete="off"
-                  required
-                />
-                <label class="visuallyHidden" for="email">email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="email"
-                  required
-                />
-                <label class="visuallyHidden" for="message" autocomplete="off"
-                  >message</label
-                >
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="message"
-                  required=""
-                ></textarea>
-                <div class="submit">
-                  <button class="send" type="submit">send message</button>
-                </div>
-              </form>
-            </div>
+          <h2>Let's Connect!</h2>
+          <div class="contactForm">
+            <form id="contact-form" onsubmit="contact(event)">
+              <div class="fields">
+                <label class="form-name" for="name">Name</label>
+                <input type="text" name="user-name" />
+              </div>
+              <div class="fields">
+                <label class="form-name" for="email">Email</label>
+                <input type="email" name="user-email" />
+              </div>
+              <div class="fields">
+                <label class="form-name" for="message">Message</label>
+                <textarea type="input" name="message"></textarea>
+              </div>
+              <button id="contact-submit" class="form-submit">Send</button>
+            </form>
           </div>
         </section>
       </section>
