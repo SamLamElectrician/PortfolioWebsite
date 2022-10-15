@@ -317,6 +317,10 @@ img {
   width: 100%;
 }
 
+.visuallyHidden {
+  display: none;
+}
+
 .contact {
   background-color: #1f2833;
   color: #c5c6c7;
@@ -340,6 +344,10 @@ img {
 .contact form textarea {
   height: 20vh;
   resize: none;
+  margin-top: 3%;
+}
+.contact form input {
+  margin-top: 3%;
 }
 .contact form .submit {
   margin: 0 auto;
