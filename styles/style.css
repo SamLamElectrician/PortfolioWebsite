@@ -319,6 +319,10 @@ img {
   display: none;
 }
 
+.visable {
+  display: contents;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -366,6 +370,15 @@ body {
 }
 .contact form .submit button {
   margin-top: 10%;
+}
+
+.thankYou {
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+}
+.thankYou h3 {
+  padding-bottom: 2%;
 }
 
 .projects {
@@ -637,6 +650,7 @@ body {
   position: fixed;
   right: 12px;
   top: 24px;
+  margin: 10px 30px 0 0;
 }
 .bar:before {
   top: -8px;
@@ -710,4 +724,102 @@ body {
 .menu-expanded .bar:after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+@media (max-width: 770px) {
+  main {
+    display: block;
+  }
+  .content {
+    height: 100vh;
+    scroll-snap-align: initial;
+  }
+  .contentContainer {
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
+    overflow-y: visible;
+  }
+  .overview {
+    position: relative;
+    padding-top: 2%;
+  }
+  .overview h1 {
+    padding-top: 6%;
+    font-size: 1.3rem;
+  }
+  .overview .socials .social {
+    width: 40vw;
+    height: 8vh;
+  }
+  .bar {
+    margin: 0;
+  }
+  .aboutMe {
+    height: 80vh;
+  }
+  .aboutMe h2 {
+    font-size: 1.3rem;
+  }
+  .aboutMe .aboutMeInfo p {
+    font-size: 1.2rem;
+  }
+  .projects {
+    height: 200vh;
+  }
+  .projects .cardContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .projects .cardContainer .flipCard {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .toolKit {
+    height: 90vh;
+  }
+  .toolKit h2 {
+    font-size: 1.5rem;
+    padding-top: 1%;
+  }
+  .toolKit ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .toolKit ul li {
+    margin: 5px;
+    max-width: 100px;
+    font-size: 0.8rem;
+  }
+  .toolKit ul li img {
+    width: 60px;
+  }
+  .toolKit li {
+    margin: 5px;
+    max-width: 100px;
+    font-size: 0.8rem;
+  }
+  .toolKit li img {
+    width: 60px;
+  }
+  .contact form {
+    width: 80%;
+  }
+}
+@media (max-width: 1050px) {
+  .overview h1 {
+    font-size: 1.4rem;
+  }
+  .overview .socials .social {
+    width: 40%;
+    height: 7vh;
+  }
+  .projects .cardContainer .flipCard {
+    height: 38vh;
+  }
+  .toolKit ul li img {
+    width: 70px;
+  }
 }
