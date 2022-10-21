@@ -1,4 +1,15 @@
+//hamburger menu
+
 const button = document.querySelector('.menu-collapsed');
+const newForm = document.getElementById('newForm');
+const thanks = document.querySelector('.thankYou');
+const form = document.getElementById('contact');
+const spinner = document.getElementById('spinner');
+
+newForm.addEventListener('click', () => {
+	thanks.style.display = 'none';
+	form.classList.remove('visuallyHidden');
+});
 
 button.addEventListener('click', () => {
 	button.classList.toggle('menu-expanded');
@@ -6,11 +17,8 @@ button.addEventListener('click', () => {
 
 function contact(event) {
 	event.preventDefault();
-	const thanks = document.querySelector('.thankYou');
-	const form = document.getElementById('contact');
-	const spinner = document.getElementById('spinner');
 	form.classList.add('visuallyHidden');
-	spinner.style.display = 'block';
+	spinner.style.display = 'flex';
 
 	emailjs
 		.sendForm(
@@ -21,8 +29,9 @@ function contact(event) {
 		)
 		.then(() => {
 			// form.classList.add('visuallyHidden');
-			spinner.style.display = 'none';
+			spinner.style.display = 'flex';
 			thanks.style.display = 'block';
+			spinner.style.display = 'none';
 		})
 		.catch(() => {
 			form.classList.add('visable');
