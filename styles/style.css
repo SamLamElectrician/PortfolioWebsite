@@ -320,7 +320,7 @@ img {
 }
 
 .visable {
-  display: contents;
+  display: block;
 }
 
 body {
@@ -381,6 +381,38 @@ body {
   padding-bottom: 2%;
 }
 
+.spinner {
+  display: none;
+  text-align: center;
+}
+
+.loading {
+  font-size: 8rem;
+  -webkit-animation: spinning 750ms infinite;
+          animation: spinning 750ms infinite;
+}
+
+@-webkit-keyframes spinning {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinning {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .projects {
   background-color: rgb(40, 40, 43);
   color: #c5c6c7;

@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/3ac14fc81f.js"
+			crossorigin="anonymous"
+		></script>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -253,9 +257,9 @@
 						</ul>
 					</div>
 				</section>
-				<section class="content contact" id="contact">
+				<section class="content contact">
 					<h2>Let's Connect!</h2>
-					<div class="contact visable">
+					<div class="contact" id="contact">
 						<form id="form" onsubmit="contact(event)">
 							<div class="fields">
 								<label class="form-name" for="name">Name</label>
@@ -272,9 +276,13 @@
 							<button id="contact-submit" class="form-submit">Send</button>
 						</form>
 					</div>
-					<div id="thankYou" class="thankYou visuallyHidden">
+					<div id="thanks" class="thankYou">
 						<h3>Thank you for reaching out. I will respond within 48 hours</h3>
 						<button>Send Another Message</button>
+					</div>
+
+					<div id="spinner" class="spinner">
+						<i class="fa-solid fa-spinner loading"></i>
 					</div>
 				</section>
 			</section>

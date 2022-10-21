@@ -1,41 +1,59 @@
 .contact {
-  background-color: rgb(40, 40, 43);
-  color: #c5c6c7;
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    padding: 4%;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-    textarea {
-      height: 20vh;
-      resize: none;
-      margin: 3% 0%;
-      display: flex;
-    }
-    .fields {
-      margin-top: 3%;
-      display: flex;
-      flex-direction: column;
-    }
-    .submit {
-      margin: 0 auto;
-      button {
-        margin-top: 10%;
-      }
-    }
-  }
+	background-color: rgb(40, 40, 43);
+	color: #c5c6c7;
+	h2 {
+		text-align: center;
+		font-size: 2rem;
+		padding: 4%;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin: 0 auto;
+		textarea {
+			height: 20vh;
+			resize: none;
+			margin: 3% 0%;
+			display: flex;
+		}
+		.fields {
+			margin-top: 3%;
+			display: flex;
+			flex-direction: column;
+		}
+		.submit {
+			margin: 0 auto;
+			button {
+				margin-top: 10%;
+			}
+		}
+	}
 }
 
 .thankYou {
-  text-align: center;
-  font-size: 1.5rem;
-  display: none;
-  h3 {
-    padding-bottom: 2%;
-  }
+	text-align: center;
+	font-size: 1.5rem;
+	display: none;
+	h3 {
+		padding-bottom: 2%;
+	}
+}
+
+.spinner {
+	display: none;
+	text-align: center;
+}
+.loading {
+	font-size: 8rem;
+	animation: spinning 750ms infinite;
+}
+
+@keyframes spinning {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
