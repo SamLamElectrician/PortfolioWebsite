@@ -777,6 +777,8 @@ body {
   .overview {
     position: relative;
     padding-top: 2%;
+    height: 100vh;
+    padding-bottom: 10%;
   }
   .overview h1 {
     padding-top: 6%;
@@ -786,10 +788,15 @@ body {
     width: 40vw;
     height: 8vh;
   }
+  .overview .imgContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
   .bar {
     margin: 0;
   }
   .aboutMe {
+    padding-top: 5%;
     height: 80vh;
   }
   .aboutMe h2 {
@@ -853,6 +860,11 @@ body {
   }
   .projects .cardContainer .flipCard {
     height: 38vh;
+  }
+  .toolKit ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .toolKit ul li img {
     width: 70px;

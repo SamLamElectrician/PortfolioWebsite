@@ -14,6 +14,8 @@
 	.overview {
 		position: relative;
 		padding-top: 2%;
+		height: 100vh;
+		padding-bottom: 10%;
 
 		h1 {
 			padding-top: 6%;
@@ -25,6 +27,10 @@
 				height: 8vh;
 			}
 		}
+		.imgContainer {
+			width: 70%;
+			margin: 0 auto;
+		}
 	}
 
 	.bar {
@@ -32,6 +38,7 @@
 	}
 
 	.aboutMe {
+		padding-top: 5%;
 		height: 80vh;
 		h2 {
 			font-size: 1.3rem;
@@ -111,6 +118,7 @@
 
 	.toolKit {
 		ul {
+			justify-content: center;
 			li {
 				img {
 					width: 70px;
